@@ -7,23 +7,35 @@ import { FaLocationArrow } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
+      {/**
+       *  UI: Spotlights
+       *  Link: https://ui.aceternity.com/components/spotlight
+       */}
       <div>
         <Spotlight
-          className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
         />
         <Spotlight
-          className="left-full top-10 h-[80vh] w-[50vw]"
+          className="h-[80vh] w-[50vw] top-10 left-full"
           fill="purple"
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
+
+      {/**
+       *  UI: grid
+       *  change bg color to bg-black-100 and reduce grid color from
+       *  0.2 to 0.03
+       */}
       <div
-        className="dark:bg-black-100 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] absolute left-0 top-0
-       flex h-screen w-full items-center justify-center bg-white"
+        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center"
       >
+        {/* Radial gradient for the container to give a faded look */}
         <div
-          className="dark:bg-black-100 pointer-events-none absolute inset-0 flex items-center justify-center
+          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
+          className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
@@ -45,8 +57,7 @@ const Hero = () => {
           />
 
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Tarek here! ...connect and underdstand more about why doing this
-            matters{" "}
+            ...connect and underdstand more about why doing this matters{" "}
           </p>
 
           <a href="#about">

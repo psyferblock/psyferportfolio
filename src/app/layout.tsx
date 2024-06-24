@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 
-import { Inter as FontSans } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import { ThemeProvider } from "./providers/ThemeProvider";
 import { Metadata } from "next";
 
-const fontSans = FontSans({
+const fontSans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 });
