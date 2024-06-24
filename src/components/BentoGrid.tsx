@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -7,7 +8,7 @@ import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 
 
-import { BackgroundGradientAnimation } from "./GradientBg";
+import { BackgroundGradientAnimation} from "./ui/GradientBg"
 import GridGlobe from "./ui/GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./ui/MagicButton";
@@ -82,7 +83,7 @@ export const BentoGridItem = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: "rgb(2,0,36)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}

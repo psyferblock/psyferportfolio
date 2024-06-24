@@ -18,6 +18,8 @@
     "@prisma/adapter-planetscale": "^5.15.1",
     "@prisma/client": "^5.15.1",
     "@radix-ui/react-slot": "^1.1.0",
+    "@react-three/drei": "^9.107.0",
+    "@react-three/fiber": "^8.16.8",
     "@t3-oss/env-nextjs": "^0.10.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -31,9 +33,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
+    "react-three": "^0.9.7",
     "rimraf": "^5.0.7",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.165.0",
+    "three-globe": "^2.31.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
@@ -41,6 +46,7 @@
     "@types/node": "^20.14.8",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-lottie": "^1.2.10",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^9.5.0",
@@ -49,6 +55,7 @@
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "prisma": "^5.15.1",
+    "react-lottie": "^1.2.4",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.2"
   },
