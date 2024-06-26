@@ -1,8 +1,8 @@
-import React from "react";
-import { Spotlight } from "./ui/Spotlight";
-import MagicButton from "./ui/MagicButton";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FaLocationArrow } from "react-icons/fa6";
+
+import MagicButton from "./MagicButton";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
@@ -39,11 +39,11 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-      <div className="relative z-10 my-20 flex justify-center">
-        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
-          <p className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
-            Digitization in flow. Create a place for you within the chaos of
-            this world.{" "}
+
+      <div className="flex justify-center relative my-20 z-10">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+            Dynamic Web Magic with Next.js
           </p>
 
           {/**
@@ -52,12 +52,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Translating your efforts into the Digital world"
+            words="Transforming Concepts into Seamless User Experiences"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            ...connect and underdstand more about why doing this matters{" "}
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
           </p>
 
           <a href="#about">
