@@ -5,9 +5,10 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import { Metadata } from "next";
 
-const fontSans = Inter({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  weight:"400",
+  variable:"--font-inter"
 });
 export const metadata: Metadata = {
   title: "Psyfer Inc ",
@@ -25,7 +26,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={fontSans.variable}>
+      <body className={`${inter.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

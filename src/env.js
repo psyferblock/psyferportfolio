@@ -19,7 +19,6 @@ export const env = createEnv({
       .default("development"),
     SENTRY_AUTH_TOKEN: z
       .string()
-      .url()
   },
 
   /**
@@ -38,6 +37,7 @@ export const env = createEnv({
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
+    SENTRY_AUTH_TOKEN:process.env.SENTRY_AUTH_TOKEN
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

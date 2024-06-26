@@ -9,6 +9,7 @@ const {
 
 const config = {
   darkMode: ["class"],
+
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -26,6 +27,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily:{
+        sans:['var(--font-inter)']
+      },
       colors: {
         black: {
           DEFAULT: "#000",
