@@ -20,6 +20,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@react-three/drei": "^9.107.0",
     "@react-three/fiber": "^8.16.8",
+    "@sentry/nextjs": "^7.105.0",
     "@t3-oss/env-nextjs": "^0.10.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
@@ -62,5 +63,11 @@
   "ct3aMetadata": {
     "initVersion": "7.34.0"
   },
-  "packageManager": "pnpm@9.3.0"
+  "packageManager": "pnpm@9.3.0",
+  "pnpm": {
+    "overrides": {
+      "node-fetch@<2.6.1": ">=2.6.1",
+      "node-fetch@<2.6.7": ">=2.6.7"
+    }
+  }
 }
